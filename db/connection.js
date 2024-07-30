@@ -2,7 +2,7 @@ import { MongoClient, ServerApiVersion } from "mongodb";
 import dotenv from "dotenv";
 dotenv.config();
 
-const URI = process.env.DATABASE || "";
+const URI = process.env.REACT_APP_DATABASE || "";
 const client = new MongoClient(URI, {
   serverApi: {
     version: ServerApiVersion.v1,

@@ -4,11 +4,10 @@ import OpenAI from "openai";
 const router = express.Router();
 
 //OpenAI API
-const openai = new OpenAI(process.env.OPENAI_API_KEY);
+const openai = new OpenAI({ apiKey: process.env.REACT_API_OPENAI_API_KEY });
 
 router.post("/chat", async (request, response) => {
   const { chats } = request.body;
-  console.log(chats);
 
   const params = {
     messages: [{ role: "user", content: "Say this is a test" }, ...chats],
