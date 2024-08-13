@@ -25,6 +25,7 @@ import quizzes from "./routes/quizzes.js";
 import authors from "./routes/authors.js";
 import vocabulary from "./routes/vocabulary.js";
 import users from "./routes/users.js";
+import firebase from "./routes/firebase.js";
 
 app.use("/api/series", series);
 app.use("/api/books", books);
@@ -32,6 +33,7 @@ app.use("/api/quizzes", quizzes);
 app.use("/api/authors", authors);
 app.use("/api/vocabulary", vocabulary);
 app.use("/api/users", users);
+app.use("/api/firebase", firebase);
 
 // Import Chatbot router
 import bookchatbot from "./routes/bookchatbot.js";

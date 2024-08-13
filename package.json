@@ -1,5 +1,5 @@
 {
-  "name": "quizbooks",
+  "name": "Little Erudite - Books and Quizzes",
   "version": "1.0.0",
   "description": "This project aims to provide a list of books and quizzes for children to enhance their reading skills.",
   "main": "server.js",
@@ -17,6 +17,9 @@
     "cors": "^2.8.5",
     "dotenv": "^8.6.0",
     "express": "^4.17.1",
+    "firebase": "^10.12.5",
+    "firebase-admin": "^12.3.1",
+    "firebase-functions": "^5.0.1",
     "mongodb": "^6.5.0",
     "mongoose": "^5.12.3",
     "multer": "^1.4.5-lts.1",
